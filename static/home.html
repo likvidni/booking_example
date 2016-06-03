@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html ng-app="BookingApp">
+<head>
+    <title>Booking</title>
+    <script src="{% static "bower_components/angular/angular.min.js" %}"></script>
+    <script src="{% static "bower_components/angular-route/angular-route.min.js" %}"></script>
+    <script src="{% static "bower_components/angular-resource/angular-resource.js" %}"></script>
+    <script src="{% static "app/app.js" %}"></script>
+</head>
+<body>
+<div class="container">
+    <div ng-view></div>
+</div>
+</body>
+</html>
